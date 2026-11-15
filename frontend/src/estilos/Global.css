@@ -1,0 +1,45 @@
+
+:root {
+    /* Cores principais */
+    --cor-fundo: #0b1220;
+    --cor-cartao: #131f33;
+    --cor-borda: #263750;
+
+    /* Texto */
+    --cor-texto: #f1f5f9;
+    --cor-texto-secundario: #94a3b8;
+
+    /* Ações */
+    --cor-primaria: #2563eb;
+    --cor-primaria-hover: #1d4ed8;
+    --cor-destaque: #60a5fa;
+    --cor-perigo: #dc2626;
+
+    /* Formas e espaçamentos */
+    --raio-cartao: 16px;
+    --raio-botao: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,123 @@
+
+.tela-criar-tarefa {
+    min-height: 100vh;
+    background-color: #0b1120;
+    color: #f8fafc;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.cabecalho-criar-tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.cabecalho-criar-tarefa h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #f8fafc;
+}
+
+.cabecalho-criar-tarefa button {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    color: #3b82f6;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.tela-criar-tarefa form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tela-criar-tarefa input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border: 1px solid #263449;
+    border-radius: 10px;
+    background-color: #111827;
+    color: #f8fafc;
+    font-size: 17px;
+    outline: none;
+}
+
+.tela-criar-tarefa input[type="text"]:focus {
+    border-color: #3b82f6;
+}
+
+.tela-criar-tarefa input::placeholder {
+    color: #94a3b8;
+}
+
+.tela-criar-tarefa h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.opcoes-pontos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.opcoes-pontos button {
+    width: 65px;
+    height: 50px;
+    border: 1px solid #3b82f6;
+    border-radius: 10px;
+    background-color: #111827;
+    color: #60a5fa;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcoes-pontos button:hover {
+    background-color: #1e3a8a;
+}
+
+.opcoes-pontos button.ponto-selecionado {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.tela-criar-tarefa form > button[type="submit"] {
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tela-criar-tarefa form > button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .tela-criar-tarefa {
+        padding: 24px 20px;
+    }
+
+    .cabecalho-criar-tarefa {
+        margin-bottom: 50px;
+    }
+}

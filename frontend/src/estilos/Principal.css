@@ -1,0 +1,291 @@
+
+/* ===== Estrutura principal ===== */
+
+.principal {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 32px;
+    padding-bottom: 110px;
+    background: #0b1220;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Área dos dias ===== */
+
+.area-dias {
+    margin-top: 40px;
+}
+
+.titulo-dias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.titulo-dias > div {
+    text-align: center;
+}
+
+
+.titulo-dias p {
+    margin: 0;
+    color: #94a3b8;
+}
+
+/* Botão adicionar dia */
+
+.botao-adicionar {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.botao-adicionar:hover {
+    background: #3b82f6;
+}
+
+.controle-adicionar-dia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: #0d2340;
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+}
+
+.controle-adicionar-dia input[type="date"] {
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    background: #071426;
+    color: #e2e8f0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.controle-adicionar-dia input[type="date"]:focus {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+.controle-adicionar-dia .botao-adicionar {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.controle-adicionar-dia .botao-adicionar:hover {
+    background: #0369a1;
+}
+
+
+/* Lista horizontal */
+
+.lista-dias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 24px;
+    padding: 4px 2px 16px;
+}
+
+.cartao-dia {
+    flex: 0 0 220px;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 18px;
+    border: 1px solid #263750;
+    border-radius: 16px;
+    background: #131f33;
+    cursor: pointer;
+    transition:
+        transform 0.2s,
+        border-color 0.2s;
+}
+
+.cartao-dia:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+}
+
+.icone-dia {
+    font-size: 24px;
+}
+
+.cartao-dia h3 {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.cartao-dia p {
+    margin: 0;
+    color: #60a5fa;
+    font-size: 14px;
+}
+
+.previa-tarefas {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.previa-tarefas li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mais-tarefas {
+    margin: 8px 0 0 20px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.ver-tarefas {
+    margin: 12px 0 0 12px;
+    color: #60a5fa;
+    font-size: 14px;
+}
+
+/* ===== Clonagem de dia ===== */
+
+.botao-clonar-dia {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    background: #1e3a5f;
+    color: #93c5fd;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.botao-clonar-dia:hover {
+    background: #2563eb;
+    border-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* Formulário de clonagem */
+
+.cartao-dia form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+    cursor: default;
+}
+
+.cartao-dia form label {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.cartao-dia form input[type="date"] {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    background: #071426;
+    color: #e2e8f0;
+    font: inherit;
+}
+
+.cartao-dia form input[type="date"]:focus {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+.cartao-dia form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cartao-dia form button:hover:not(:disabled) {
+    background: #3b82f6;
+}
+
+.cartao-dia form button[type="button"] {
+    border-color: #334155;
+    background: transparent;
+    color: #cbd5e1;
+}
+
+.cartao-dia form button[type="button"]:hover:not(:disabled) {
+    background: #263750;
+}
+
+.cartao-dia form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Mensagem de sucesso ou erro */
+
+.cartao-dia [role="status"] {
+    margin-top: 10px;
+    color: #93c5fd;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Adaptação para celulares ===== */
+
+@media (max-width: 600px) {
+    .principal {
+        padding: 16px;
+        padding-bottom: 100px;
+    }
+
+    .area-dias {
+        margin-top: 28px;
+    }
+
+    .titulo-dias h2 {
+        font-size: 22px;
+    }
+
+    .botao-adicionar {
+        padding: 11px 14px;
+    }
+
+    .lista-dias {
+        gap: 12px;
+    }
+
+    .cartao-dia {
+        flex-basis: 165px;
+        min-height: 190px;
+    }
+
+}

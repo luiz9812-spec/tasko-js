@@ -1,0 +1,91 @@
+/* ===== Cabeçalho do usuário ===== */
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: #131f33;
+    border: 1px solid #263750;
+    border-radius: 18px;
+}
+
+.informacoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Avatar com a inicial do usuário */
+
+.avatar {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.saudacao {
+    margin: 0 0 5px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.informacoes-usuario h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* ===== Nível e XP ===== */
+
+.progresso-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nivel,
+.xp {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.nivel {
+    background: #263750;
+    color: #cbd5e1;
+}
+
+.xp {
+    background: #1d3b70;
+    color: #93c5fd;
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho-principal {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .informacoes-usuario h1 {
+        font-size: 24px;
+    }
+
+    .progresso-usuario {
+        flex-wrap: wrap;
+    }
+}

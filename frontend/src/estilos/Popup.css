@@ -1,0 +1,64 @@
+.fundo-popup {
+position: fixed;
+inset: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.65);
+z-index: 1000;
+padding: 20px;
+}
+
+.caixa-popup {
+width: 100%;
+max-width: 360px;
+padding: 28px;
+border: 1px solid #263750;
+border-radius: 16px;
+background: #131f33;
+color: #f1f5f9;
+text-align: center;
+box-sizing: border-box;
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.caixa-popup h2 {
+margin-top: 0;
+color: #60a5fa;
+}
+
+.caixa-popup p {
+margin: 20px 0;
+line-height: 1.5;
+}
+
+.caixa-popup button {
+padding: 10px 24px;
+border: none;
+border-radius: 8px;
+background: #2563eb;
+color: white;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.caixa-popup button :hover {
+background: #1d4ed8;
+}
+
+.botoes-popup {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botoes-popup button {
+    cursor: pointer;
+}
+
+.botoes-popup .botao-confirmar-exclusao {
+    background-color: #dc2626;
+    color: white;
+}
